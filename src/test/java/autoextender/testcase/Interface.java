@@ -5,7 +5,7 @@ package autoextender.testcase;
  */
 public interface Interface {
 
-    String implementedInAbstractClass();
+    String implemented();
 
     String returnString();
 

@@ -2,6 +2,7 @@ package autoextender;
 
 
 import autoextender.testcase.AbstractClass;
+import autoextender.testcase.BaseClass;
 import autoextender.testcase.Interface;
 import org.junit.Rule;
 import org.junit.Test;
@@ -13,12 +14,12 @@ import static org.assertj.core.api.Assertions.assertThat;
 /**
  * @author Sergii Karpenko
  */
-public class AutoExtenderTest {
+public class AutoBinderTest {
 
     @Rule
     public ExpectedException expectedException = ExpectedException.none();
 
-    private Interface stubbed = AutoImplementer.implement(AbstractClass.class);
+    private Interface stubbed = AutoBinder.extend(BaseClass.class).to(Interface.class);
 
     @Test
     public void shouldReturnValueForImplementedMethods(){

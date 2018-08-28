@@ -3,11 +3,11 @@ package autoextender.testcase;
 /**
  * @author Sergii Karpenko
  */
-abstract public class WrongAbstractClass {
+public class BaseClass {
 
     public static final String VALUE = "Just implementation";
 
-    public String implementedInAbstractClass(){
+    public String implemented(){
         return VALUE;
     }
 
